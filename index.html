@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html amp lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <script
-      async
-      custom-element="amp-sidebar"
-      src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
-    ></script>  
-    <script
-      async
-      custom-element="amp-list"
-      src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
-    ></script>
-    <script
-      custom-template="amp-mustache"
-      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
-      async
-    ></script>
-    <script
-      async
-      custom-element="amp-form"
-      src="https://cdn.ampproject.org/v0/amp-form-0.1.js"
-    ></script>
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" async></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
+    <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js">
+    </script>
+
     <title>Portfolio</title>
     <!-- Link to the non-amp site -->
-    <link
-      rel="canonical"
-      href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/"
-    />
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width,minimum-scale=1,initial-scale=1"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -48,280 +28,294 @@
       }
     </script>
 
-    <script
-      async
-      custom-element="amp-embedly-card"
-      src="https://cdn.ampproject.org/v0/amp-embedly-card-0.1.js"
-    ></script>
+    <script async custom-element="amp-embedly-card"
+        src="https://cdn.ampproject.org/v0/amp-embedly-card-0.1.js"></script>
     <style amp-boilerplate>
-      body {
-        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      }
-      @-webkit-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-moz-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-ms-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @-o-keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-      @keyframes -amp-start {
-        from {
-          visibility: hidden;
-        }
-        to {
-          visibility: visible;
-        }
-      }
-    </style>
-    <noscript
-      ><style amp-boilerplate>
         body {
-          -webkit-animation: none;
-          -moz-animation: none;
-          -ms-animation: none;
-          animation: none;
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
         }
-      </style></noscript
-    >
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                -webkit-animation: none;
+                -moz-animation: none;
+                -ms-animation: none;
+                animation: none;
+            }
+        </style>
+    </noscript>
     <style amp-custom>
-      /* any custom style goes here */
-      body {
-        background-color: white;
-        font-family: "Open Sans", sans-serif;
-        line-height: 1.5rem;
-        margin-left: 10%;
-      }
+        /* any custom style goes here */
+        body {
+            background-color: white;
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.5rem;
+            margin-left: 10%;
+        }
 
-      .headerbar {
-        align-items: center;
-        background-color: #fff;
-        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+        .headerbar {
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+            display: flex;
+            left: 0;
+            padding-left: 1rem;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 999;
+        }
+
+        .header-title {
+            padding: 10px;
+            font-weight: 400;
+        }
+
+        .navbar-trigger {
+            cursor: pointer;
+            font-size: 2rem;
+            line-height: 3.5rem;
+            outline: none;
+            padding-right: 1rem;
+        }
+
+        .label {
+            font-size: 0.875rem;
+            letter-spacing: 0.06rem;
+            line-height: 1.125rem;
+            list-style: none;
+            padding: 0;
+            text-transform: uppercase;
+        }
+
+        .sidebar .dropdown-item,
+        .sidebar .dropdown header,
+        .sidebar .nav-item {
+            margin: 0 0 2rem;
+        }
+
+        .headerbar+ :not(amp-sidebar),
+        .headerbar+amp-sidebar+* {
+            margin-top: 3.5rem;
+        }
+
+        .sidebar {
+            background-color: white;
+            min-width: 300px;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            width: 300px;
+        }
+
+        h2 {
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+        }
+
+        .amp-img-avatar {
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .main-content {
+            margin: 0 10px;
+        }
+
+        .card {
+            /* Add shadows to create the "card" effect */
+            box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            padding: 10px;
+            text-align: center;
+            margin: 0 auto;
+            background: #2196f3;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .box {
+            -webkit-box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
+            background: #2196f3;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        main {
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        amp-carousel {
+            padding: 30px;
+        }
+
+        .social-bar {
+        -ms-flex-pack: center;
+        -webkit-box-pack: center;
+        display: -ms-flexbox;
+        display: -webkit-box;
         display: flex;
-        left: 0;
-        padding-left: 1rem;
-        position: fixed;
-        right: 0;
-        top: 0;
-        z-index: 999;
-      }
-      .header-title {
-        padding: 10px;
-        font-weight: 400;
-      }
-
-      .navbar-trigger {
-        cursor: pointer;
-        font-size: 2rem;
-        line-height: 3.5rem;
-        outline: none;
-        padding-right: 1rem;
-      }
-
-      .label {
-        font-size: 0.875rem;
-        letter-spacing: 0.06rem;
-        line-height: 1.125rem;
-        list-style: none;
-        padding: 0;
-        text-transform: uppercase;
-      }
-
-      .sidebar .dropdown-item,
-      .sidebar .dropdown header,
-      .sidebar .nav-item {
-        margin: 0 0 2rem;
-      }
-
-      .headerbar + :not(amp-sidebar),
-      .headerbar + amp-sidebar + * {
+        justify-content: center;
+        margin-bottom: 1rem;
         margin-top: 3.5rem;
       }
-
-      .sidebar {
-        background-color: white;
-        min-width: 300px;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        width: 300px;
-      }
-
-      h2 {
-        font-weight: 400;
-        margin: 0;
-        padding: 0;
-        font-size: 1.4rem;
-        line-height: 2.5rem;
-      }
-
-      .amp-img-avatar {
-        border-radius: 50%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-      }
-
-      .main-content {
-        margin: 0 10px;
-      }
-
-      .card {
-        /* Add shadows to create the "card" effect */
-        box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.2);
-        transition: 0.3s;
-        padding: 10px;
-        text-align: center;
-        margin: 0 auto;
-        background: #2196f3;
-        color: #fff;
-        display: inline-block;
-      }
-
-      .box {
-        -webkit-box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
-        box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
-        background: #2196f3;
-      }
-
-      /* On mouse-over, add a deeper shadow */
-      .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      }
-
-      main {
-        margin: 0 auto;
-        max-width: 700px;
-      }
-
-      amp-carousel {
-        padding: 30px;
-      }
     </style>
-  </head>
-  <body>
-    <header class="headerbar">
-      <div role="button" on="tap:sidebar1" class="navbar-trigger">
-        ☰
-      </div>
+</head>
 
-      <h2 class="header-title">Prathap S S</h2>
+<body>
+    <header class="headerbar">
+        <div role="button" on="tap:sidebar1" class="navbar-trigger">
+            ☰
+        </div>
+
+        <h2 class="header-title">Prathap S S</h2>
     </header>
 
     <amp-sidebar id="sidebar1" layout="nodisplay" side="left" class="sidebar">
-      <div on="tap:sidebar1.close" class="navbar-trigger">x</div>
-      <nav class="nav">
-        <ul class="label">
-          <li class="navitem">
-            <a href="#idTwo" on="tap:idTwo.scrollTo">About Me</a>
-          </li>
-          <br />
-          <li class="navitem">
-            <a href="#idFour" on="tap:idFour.scrollTo">My Projects</a>
-          </li>
-        </ul>
-      </nav>
+        <div on="tap:sidebar1.close" class="navbar-trigger">x</div>
+        <nav class="nav">
+            <ul class="label">
+                <li class="navitem">
+                    <a href="#idTwo" on="tap:idTwo.scrollTo">About Me</a>
+                </li>
+                <br />
+                <li class="navitem">
+                    <a href="#idFour" on="tap:idFour.scrollTo">My Projects</a>
+                </li>
+            </ul>
+        </nav>
     </amp-sidebar>
     <main>
-      <div class="main-content">
-        <br />
-        <amp-img
-          class="amp-img-avatar"
-          width="200"
-          height="200"
-          src="https://avatars2.githubusercontent.com/u/25050648?s=460&u=f332039ec5dbf374a0f5a771c52d71424641fa04&v=4"
-          layout="fixed"
-        >
-        </amp-img>
+        <div class="main-content">
+            <br />
+            <amp-img class="amp-img-avatar" width="200" height="200"
+                src="https://avatars2.githubusercontent.com/u/25050648?s=460&u=f332039ec5dbf374a0f5a771c52d71424641fa04&v=4"
+                layout="fixed">
+            </amp-img>
 
-        <p
-          style="text-align: justify;
+            <p style="text-align: justify;
                     text-justify: inter-word;
-                    "   
-        >
-          I am Prathap S S. A software developer aspirer who enjoys playing with
-          technology. Life long student striving for self improvement on a daily
-          basis. Professional procrastinator. Addicted to internet and coffee.
-        </p>
-        <h2>My Projects</h2>
+                    ">
+                I am Prathap S S. A software developer aspirer who enjoys playing with
+                technology. Life long student striving for self improvement on a daily
+                basis. Professional procrastinator. Addicted to internet and coffee.
+            </p>
+            <h2>My Projects</h2>
 
-        <script type="text/javascript">
-          var apiUrl = "https://api.github.com/users/d3xt3r0/repos";
-          fetch(apiUrl)
-            .then(response => {
-              return response.json();
-            })
-            .then(data => {
-              //console.log(data);
-              //console.log(Object.values(data).length);
-              // Work with JSON data here
-              var listDiv = document.getElementById("project-list");
-              var ul = document.createElement("ul");
-              for (var i = 0; i < Object.values(data).length; ++i) {
-                var a = document.createElement("a");
-                var li = document.createElement("li");
-                a.href = Object.values(data)[i].html_url;
-                a.textContent = Object.values(data)[i].full_name; // Use innerHTML to set the text
-                li.appendChild(a);
-                ul.appendChild(li);
-              }
-              listDiv.appendChild(ul);
-            })
-            .catch(err => {
-              // Do something for an error here
-              console.log("error");
-            });
-        </script>
+            <script type="text/javascript">
+                var apiUrl = "https://api.github.com/users/d3xt3r0/repos";
+                fetch(apiUrl)
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        //console.log(data);
+                        //console.log(Object.values(data).length);
+                        // Work with JSON data here
+                        var listDiv = document.getElementById("project-list");
+                        var ul = document.createElement("ul");
+                        for (var i = 0; i < Object.values(data).length; ++i) {
+                            var a = document.createElement("a");
+                            var li = document.createElement("li");
+                            a.href = Object.values(data)[i].html_url;
+                            a.textContent = Object.values(data)[i].full_name; // Use innerHTML to set the text
+                            li.appendChild(a);
+                            ul.appendChild(li);
+                        }
+                        listDiv.appendChild(ul);
+                    })
+                    .catch(err => {
+                        // Do something for an error here
+                        console.log("error");
+                    });
+            </script>
 
 
-        <div id="project-list"></div>
-        
-        <br/>
+            <div id="project-list"></div>
 
-        <p
-          style="text-align: justify;
+            <br />
+
+            <p style="text-align: justify;
                     text-justify: inter-word;
-                    "
-        >
-          The site is still a work in progress. Still trying to fit in quality text
-          instead of lorem ipsum. The site is designed and developed in AMP format for
-          better accessability and speed. This is still not a valid AMP page. Trying to make the 
-          API calls without custom javascript.
-        </p>
-        <!--<div class="box">
-          <h1>
-            Portfolio Website
-          </h1>
-        </div> -->
-      </div>
+                    ">
+                The site is still a work in progress. Still trying to fit in quality text
+                instead of lorem ipsum. The site is designed and developed in AMP format for
+                better accessability and speed. This is still not a valid AMP page. Trying to make the
+                API calls without custom javascript.
+            </p>
+
+            <!--<div class="box">
+            <h1>
+                Portfolio Website
+            </h1>
+            </div> -->
+        </div>
     </main>
-  </body>
+</body>
+
 </html>
